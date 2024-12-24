@@ -1,0 +1,140 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-position: center center;
+    object-fit: cover;
+    background-image: url('images/myaccount.png.jpg');
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #010c3e;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.profile-container {
+    max-width: 450px;
+    justify-content: center;
+    margin: 140px auto;
+    background-color:#ffffff78;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.profile-container h1 {
+    margin-top: 0;
+}
+
+form label {
+    font-weight: bold;
+    color: #010c3e;
+    display: block;
+    margin-top: 15px;
+}
+
+form input,
+form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid  #010c3e;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #010c3e;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(135, 211, 215, 0.5);
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+button {
+    background-color: #010c3e;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 90%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #87d3d7;
+    color: #010c3e;
+}
+
+a.btn {
+    display: inline-block;
+    text-align: center;
+    background-color: #010c3e;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    /* margin-left: 330px; */
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+a.btn:hover {
+    background-color: #87d3d7;
+    color: #010c3e;
+}
+
+.profile-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #87d3d7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 3rem;
+    color: #010c3e;
+}
+
+.profile-container p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #000;
+    margin: 10px 0;
+}
+
+.profile-container p strong {
+    color: #010c3e;
+    font-size:1.6rem;
+    font-weight:bold;
+}
+
+/* Add animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile-container {
+    animation: fadeIn 0.8s ease-out;
+}
